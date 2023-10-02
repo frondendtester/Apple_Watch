@@ -2,7 +2,8 @@
 :root	{
 	--accent-color: #EA625C ;
 	--font-family: "Roboto","Arial", sans-serif;
-	--text-color: #333 ;
+	--text-color: #333;
+	--primary-dark: #da3229;
 }
 
 /* GLOBAL */
@@ -137,20 +138,54 @@ img	{
 
 /* MAIN-LINK */
 .main-link	{
+	display: inline-block;
+	color: #fff;
+	background-color: var(--accent-color);
+	text-decoration: none;
+	padding: 12px 38px;
+  border: 0;
 	justify-content: center;
 	align-items: center;
 	width: 260px;
 	height: 51px;
 	text-align: center;
-	font-family: var(--font-family);
 	font-size: 18px;
-	line-height: 15px;
-	font-weight: 700;
-	color: #fff;
-	background-color: var(--accent-color);
-	text-decoration: none;
+	line-height: 1.5;
+	font-weight: bold;
 	text-transform: uppercase;
-	font-style: normal;
+	transition: background-color 0.3s ease;
+}
+
+.main-link:hover	{
+background-color: var(--primary-dark);
+}
+
+.main-link:active	{
+	opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+	border-bottom: 2px	solid	#ddd;
+	padding-top: 140px;
+	padding-bottom: 185px;
+	color: #000;
+	background-image: url("../img/soat.jpg");
+	background-repeat: no-repeat;
+	background-position: left calc(50% + 550px) bottom;
+}
+
+
+.hero-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-content {
+	width: 100%;
+	max-width: 490px;
+	margin-right: 245px;
 }
 
 .hero-heading	{
@@ -161,60 +196,28 @@ img	{
 	line-height: 1.2;
 }
 
-
-/* HERO */
-.hero {
-	padding-top: 183px;
-	padding-bottom: 170.46px;
-	color: #000;
-}
-
-.hero-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.hero-content {
-	width: 490px;
-	margin-right: 245px;
-}
-
 .hero-heading {
 	text-align: center;
-	margin-top: 170.46;
+	margin-top: 0;
 	margin-bottom: 30px;
 	color: #000;
 	font-family: var(--font-family);
 	font-weight: 700;
 	line-height: 1.2;
 	font-size: 50px;
-	font-style: normal;
 }
 
 .hero-text {
+	border-left: 3px	solid	#888;
+	padding-left: 37px;
 	margin-top: 0px;
 	margin-bottom: 30px;
 	width: 450px;
 	height: 120px;
 	color: #777;
 	font-family: var(--font-family);
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 150%;
 }
 
-
-.hero-img {
-	width: 587px;
-	height: 565px;
-	flex-shrink: 0;
-	background-image: url("../img/watches.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center	center;
-}
 
 
 /* FEATURES */
@@ -234,7 +237,6 @@ list-style: none;
 
 .feature {
 flex-direction: column;
-
 }
 
 
@@ -417,8 +419,12 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-	.aksiya	{
-		background-image: url("../img/runners\ 1@2x.jpg");
-	}
+.hero	{
+	background-image: url("../img/soat@2x.jpg");
+}
+
+.aksiya	{
+	background-image: url("../img/runners\ 1@2x.jpg");
+}
 
 }
