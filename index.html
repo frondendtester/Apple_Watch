@@ -12,7 +12,6 @@
 	<!-- Stylessheets -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
 
@@ -20,12 +19,11 @@
 	<!-- SITE HEADER-->
 	<header class="site-header">
 		<div class="site-header-container container">
-			<a class="logo-link" href="index.html">
+			<a class="logo-link" href="#">
 				<img class="logo-img" src="img/apple.svg" alt="apple-icon" width="35" height="41.543">
 			</a>
-			<div class="site-header-actions">
 				<!---SITENAV -->
-				<nav>
+				<nav class="sitenav">
 					<ul class="sitenav-list">
 						<li class="sitenav-item
 						"><a class="sitenav-link" class="link" href="#">Home</a></li>
@@ -35,11 +33,12 @@
 						"><a class="sitenav-link" class="link" href="#">Offers</a></li>
 						<li class="sitenav-item
 						"><a class="sitenav-link" class="link" href="#">Services</a></li>
-						<li class="sitenav-item
-						"><a class="sitenav-link" class="link" href="#">How can we help you?</a></li>
 					</ul>
 				</nav>
-			</div>
+
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+					<input class="search-form-input" type="search" name="search" placeholder="How can we help you?" aria-label="search" required>
+				</form>
 		</header>
 
 
