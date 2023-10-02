@@ -39,8 +39,8 @@ img	{
 
 /* OUTLINE STYLE */
 *:focus	{
-	outline: 2px dashed skyblue;
-	outline-offset: 3px;
+	outline: 2px dashed var(--accent-color);
+	outline-offset: 2px;
 }
 
 
